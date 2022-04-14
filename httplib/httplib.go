@@ -112,6 +112,11 @@ func Head(url string) *BeegoHttpRequest {
 	return newBeegoRequest(url, "HEAD")
 }
 
+// Patch returns *BeegoHttpRequest with PATCH method.
+func Patch(url string) *BeegoHttpRequest {
+	return newBeegoRequest(url, "PATCH")
+}
+
 // BeegoHttpSettings
 type BeegoHttpSettings struct {
 	ShowDebug        bool
